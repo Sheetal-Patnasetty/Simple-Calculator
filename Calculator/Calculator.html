@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="F:\Sheetal\Web dev\Projects\Calculator\calculator.css">
+</head>
+<body>
+    <h1>SIMPLE CALCULATOR</h1>
+    <br>
+    <form name="Calci">
+        <table border="10">  <!--Calculator will be in form of a table-->
+        <tr>
+            <td colspan="4">
+                <input type="text" name="display" id="CALCULATOR" value=""> <!--First row is the Display area-->
+            </td>
+        </tr>
+        <td> <!--Second row-->
+            <input type="button" value="0" onclick="Calci.display.value += '0'"> 
+        </td>
+        <td>
+            <input type="button" value="1" onclick="Calci.display.value += '1'">
+        </td>
+        <td>
+            <input type="button" value="2" onclick="Calci.display.value += '2'">
+        </td>
+        <td>
+            <input type="button" id="clear" name="clear" value="c" onclick="Calci.display.value = ''">
+        </td>
+        <tr> <!--Third row-->
+        <td>
+            <input type="button" value="3" onclick="Calci.display.value += '3'">
+        </td>
+        <td>
+            <input type="button" value="4" onclick="Calci.display.value += '4'">
+        </td>
+        <td>
+            <input type="button" value="5" onclick="Calci.display.value += '5'">
+        </td>
+        <td>
+            <input type="button" class="operator" name="plus" value="+" onclick="Calci.display.value += '+'">
+        </td>
+        </tr>
+        <tr> <!--Fourth row-->
+        <td>
+            <input type="button" value="6" onclick="Calci.display.value += '6'">
+        </td>
+        <td>
+            <input type="button" value="7" onclick="Calci.display.value += '7'">
+        </td>
+        <td>
+            <input type="button" value="8" onclick="Calci.display.value += '8'">
+        </td>
+        <td>
+            <input type="button" class="operator" name="minus" value="-" onclick="Calci.display.value += '-'">
+        </td>
+        </tr>
+        <tr> <!--Fifth row-->
+        <td>
+            <input type="button" value="9" onclick="Calci.display.value += '9'">
+        </td>
+        <td>
+            <input type="button" class="operator" name="multiply" value="*" onclick="Calci.display.value += '*'">
+        </td>
+        <td>
+            <input type="button" class="operator" name="divide" value="/" onclick="Calci.display.value += '/'">
+        </td>
+        <td>
+            <input type="button" class="operator" name="equal" value="=" onclick="Calci.display.value=eval(Calci.display.value)"> <!--eval is a bulit in function-->
+        </td>
+        </tr>
+        </table>
+    </form>
+    <footer>
+        <p>Author: Sheetal K Patnasetty</p>
+      </footer>
+</body>
+</html>
