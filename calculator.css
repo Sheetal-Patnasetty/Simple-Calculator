@@ -1,0 +1,56 @@
+h1{
+    font: bolder;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 2px 4px black;  
+}
+
+body{
+    background: rgb(8,0,36);
+    background: radial-gradient(circle, rgb(23, 1, 100) 0%, rgb(38, 128, 163) 46%, rgba(0,212,255,1) 100%);
+}
+
+table{
+    text-align: center;
+    font: medium;
+    background-color: lightseagreen;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    border-color: black;
+}
+
+input{
+    position: relative;
+    color: rgb(10, 37, 46);
+}
+
+#CALCULATOR{
+    background-color: white;
+    width: 250px;
+    height: 50px;
+}
+
+.operator{  
+    font: bold;
+  }  
+
+.operator:hover{  
+    box-shadow: none ;  
+    background-color: burlywood;
+}
+
+input:hover{
+    background-color: beige;
+}
+
+#clear:hover{
+    background-color: darkgoldenrod;
+}
+
+footer{
+    position: absolute;
+    bottom: 100px;
+    background-color: cadetblue;
+    color: beige;
+}
